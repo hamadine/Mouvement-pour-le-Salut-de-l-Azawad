@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MSA – Mouvement pour le Salut de l'Azawad</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/msa-logo.png" type="image/png" />
+  <style>
+    .hidden { display: none; }
+    .contacts a { color: #117a8b; text-decoration: none; }
+    .contacts a:hover { text-decoration: underline; }
+    .contacts { font-size: 1rem; line-height: 1.7; }
+    .projet-dossier {
+      background: #f8f9fa;
+      border-radius: 8px;
+      padding: 2rem;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      font-size: 1.07rem;
+      line-height: 1.7;
+    }
+    .projet-dossier h3, .projet-dossier h4 { margin-top: 1.5em; }
+    .projet-dossier table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+    .projet-dossier th, .projet-dossier td { border: 1px solid #ccc; padding: 0.4em 0.7em; }
+    .projet-dossier tr:nth-child(even) { background: #f2f2f2; }
+    .projet-dossier ul, .projet-dossier ol { margin-left: 1.3em; }
+    .projet-dossier .section-title { font-weight: bold; color: #0a4a68; margin-top:2em; }
+    .projet-dossier .budget-table th { background:#e1ecf4; }
+    .projet-dossier .impact-list { font-size:1.1em; margin-bottom:1.5em;}
+    .projet-dossier .contact-bloc { margin-top:2em; font-size:1.1em;}
+    .projet-dossier .contact-bloc a { font-weight:bold;}
+    .toggle-project { margin: 1em 0 2em 0; }
+  </style>
+</head>
+<body>
+
+  <!-- EFFET STYLO -->
+  <div class="stylo-container">
+    <img src="images/stylo.png" alt="Stylo volant" class="stylo" />
+  </div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img src="images/msa-logo.png" alt="Logo MSA" class="logo" />
+    <h1>Mouvement pour le Salut de l'Azawad</h1>
+    <p class="tagline">Une voix. Une mémoire. Une plateforme.</p>
+    <div class="cta-buttons">
+      <a href="#projet" class="btn discover">🟢 Je découvre</a>
+      <a href="#soutien" class="btn support">🔴 Je soutiens</a>
+    </div>
+  </header>
+
+  <!-- À PROPOS -->
+  <section id="projet">
+    <h2>À propos du MSA</h2>
+    <p>Le Mouvement pour le Salut de l'Azawad (MSA) œuvre pour la paix, la justice et la souveraineté des populations de l’Azawad. Cette plateforme vise à offrir un espace numérique sécurisé, indépendant, et accessible pour la diffusion de nos messages, archives et communiqués.</p>
+    
+    <!-- BOUTON LIRE/FERMER LE PROJET -->
+    <button class="btn toggle-project" id="toggleProjetBtn">📄 Lire le projet complet</button>
+
+    <!-- DOSSIER DE PROJET COMPLET (CACHÉ PAR DÉFAUT) -->
+    <div id="projet-detail" class="projet-dossier hidden">
+      <h3>📘 Dossier de Projet Officiel<br/>Plateforme Numérique du Mouvement pour le Salut de l’Azawad</h3>
+      <p><strong>Présenté par :</strong> Hamadine AG MOCTAR<br/>
+      <strong>Date :</strong> Mai 2025</p>
+      
+      <hr />
+      <div class="section-title">🟦 1. Résumé Exécutif</div>
+      <p>
+        Le présent projet vise la création d’une plateforme numérique sécurisée, multilingue et évolutive, destinée à centraliser, archiver et diffuser l’ensemble des publications officielles du Mouvement pour le Salut de l’Azawad (MSA). Il s’agit de doter le mouvement d’un outil moderne de communication stratégique, fiable et indépendant, afin de lutter contre la désinformation, renforcer la transparence et préserver la mémoire politique et sociale du territoire de l’Azawad.
+      </p>
+      <p>Cette initiative permettra :</p>
+      <ul>
+        <li>la publication des communiqués officiels,</li>
+        <li>le partage de vidéos longues (jusqu'à 60 min) et audios,</li>
+        <li>la consultation sécurisée d'archives historiques,</li>
+        <li>une authentification par compte Google, garantissant la traçabilité et la gestion d'accès aux contenus sensibles.</li>
+      </ul>
+      
+      <div class="section-title">🟨 2. Contexte et Justification</div>
+      <p>
+        Depuis des années, les populations de l’Azawad souffrent d’une invisibilisation médiatique et d’une désinformation systématique autour de leur réalité, leurs luttes, et leurs aspirations.<br>
+        Les réseaux sociaux, devenus à la fois outils et dangers, sont régulièrement exploités pour diffuser de fausses informations, des faux communiqués ou des discours non validés, mettant en péril les efforts de médiation, de paix et de cohésion.<br>
+        À cela s’ajoute le besoin de préserver la mémoire collective du mouvement : communiqués passés, vidéos de terrain, archives orales, témoignages.<br>
+        Face à cela, il devient indispensable de créer notre propre infrastructure numérique souveraine, indépendante des plateformes commerciales.
+      </p>
+      
+      <div class="section-title">🟩 3. Objectifs du Projet</div>
+      <p><strong>🎯 Objectif général</strong></p>
+      <p>Créer une plateforme numérique centralisée et sécurisée pour le Mouvement pour le Salut de l’Azawad, dédiée à l’information vérifiée, aux archives, et à la documentation audiovisuelle.</p>
+      <p><strong>🎯 Objectifs spécifiques</strong></p>
+      <ul>
+        <li>Offrir un accès public contrôlé à tous les communiqués, vidéos, enregistrements, publications du MSA.</li>
+        <li>Lutter activement contre les fake news et la manipulation de l’information.</li>
+        <li>Garantir une continuité numérique des archives historiques.</li>
+        <li>Fournir une expérience utilisateur intuitive, multilingue, responsive.</li>
+        <li>Assurer la traçabilité et la sécurité des contenus via une authentification par Google.</li>
+      </ul>
+      
+      <div class="section-title">🟧 4. Public cible</div>
+      <ul>
+        <li>Journalistes, chercheurs, diplomates, ONGs</li>
+        <li>Membres du MSA et sympathisants</li>
+        <li>Jeunes de l’Azawad et diaspora</li>
+        <li>Partenaires techniques, institutions, médias</li>
+      </ul>
+      
+      <div class="section-title">🟪 5. Fonctionnalités principales</div>
+      <table>
+        <tr><th>Fonctionnalité</th><th>Description</th></tr>
+        <tr><td>📢 Communiqués & Annonces</td><td>Liste chronologique, triables par date, catégories, auteurs</td></tr>
+        <tr><td>🗃️ Archives historiques</td><td>Documents PDF, témoignages, vidéos classés (consultables selon droits)</td></tr>
+        <tr><td>🎧 Lecteur audio intégré</td><td>Jouer des déclarations vocales, interviews, archives orales</td></tr>
+        <tr><td>📹 Upload & streaming vidéo</td><td>Contenu jusqu’à 60 minutes avec prévisualisation intégrée</td></tr>
+        <tr><td>🔒 Connexion via Google</td><td>Authentification sécurisée, sans mot de passe</td></tr>
+        <tr><td>🌐 Interface multilingue</td><td>Français, Tamajaq, Arabe, Anglais (extensible)</td></tr>
+        <tr><td>📱 Responsive + PWA</td><td>Accès sur téléphone, tablette, PC, avec fonctionnement hors-ligne</td></tr>
+        <tr><td>🔗 Liens de bas de page</td><td>Vers réseaux officiels, partenaires, plateformes associées</td></tr>
+      </table>
+      
+      <div class="section-title">🟫 6. Architecture technique</div>
+      <table>
+        <tr><th>Module</th><th>Technologie</th></tr>
+        <tr><td>Frontend</td><td>Next.js (React) ou Vue.js</td></tr>
+        <tr><td>Backend</td><td>Node.js + Express ou Laravel</td></tr>
+        <tr><td>Base de données</td><td>PostgreSQL (Cloud ou local)</td></tr>
+        <tr><td>Authentification</td><td>OAuth 2.0 Google via Firebase ou NextAuth</td></tr>
+        <tr><td>Stockage vidéo</td><td>Wasabi S3 / Backblaze B2 / Cloudflare Stream</td></tr>
+        <tr><td>Lecteur média</td><td>WaveSurfer.js (audio), Video.js (stream vidéo HLS)</td></tr>
+        <tr><td>Admin Panel</td><td>Custom ou basé sur Strapi/Directus</td></tr>
+      </table>
+      
+      <div class="section-title">🔵 7. Faisabilité et viabilité</div>
+      <ul>
+        <li><strong>✅ Points forts :</strong>
+          <ul>
+            <li>Architecture modulaire, scalable</li>
+            <li>Sécurité garantie par OAuth2 + gestion des accès</li>
+            <li>Plateforme en open source ou low cost</li>
+            <li>Faible maintenance requise</li>
+          </ul>
+        </li>
+        <li><strong>⚠️ Limites potentielles :</strong>
+          <ul>
+            <li>Nécessite une équipe initiale technique pour le déploiement</li>
+            <li>Lenteurs en zone à faible connectivité (à compenser par un mode offline PWA)</li>
+            <li>Surveillance continue du contenu à prévoir pour éviter les abus</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="section-title">. Budget estimatif (coûts mensuels / annuels)</div>
+      <table class="budget-table">
+        <tr><th>Élément</th><th>Description</th><th>Coût estimé</th></tr>
+        <tr><td>Hébergement cloud</td><td>Serveur VPS ou Firebase + backend</td><td>25 – 40 €/mois</td></tr>
+        <tr><td>Nom de domaine</td><td>Nom officiel (ex. msa-azawad.org)</td><td>12 €/an</td></tr>
+        <tr><td>Auth Google API</td><td>Gratuit (quota généreux)</td><td>0 €</td></tr>
+        <tr><td>Stockage S3 (Wasabi/Backblaze)</td><td>Jusqu’à 5To vidéos/audio</td><td>~60 €/mois</td></tr>
+        <tr><td>Développement initial (freelance ou équipe)</td><td>~200h @ 20€/h</td><td>4 000 € (one shot)</td></tr>
+        <tr><td>Interface admin + design UI</td><td>UX/UI design, CMS customisé</td><td>1 000 €</td></tr>
+        <tr><td>Formation & support</td><td>Guide utilisateur, support MSA</td><td>800 €</td></tr>
+        <tr><td>Sauvegardes & Monitoring</td><td>Automatisé</td><td>10 €/mois</td></tr>
+        <tr><td>Maintenance annuelle</td><td>Correctifs, mise à jour, sécurité</td><td>~800 €/an</td></tr>
+      </table>
+      <ul>
+        <li><strong>Total initial :</strong> ~5 800 € (lancement)</li>
+        <li><strong>Coûts de fonctionnement annuels :</strong> ~1 200 €</li>
+      </ul>
+
+      <div class="section-title">🟨 9. Impacts attendus</div>
+      <ul class="impact-list">
+        <li>✅ Réduction massive des risques de fake news</li>
+        <li>✅ Renforcement de la présence officielle du MSA</li>
+        <li>✅ Meilleure accessibilité à l’histoire et la mémoire collective</li>
+        <li>✅ Canal direct vers les partenaires, journalistes, observateurs</li>
+        <li>✅ Outil de veille, d’analyse et de souveraineté numérique</li>
+      </ul>
+
+      <div class="section-title">🟥 10. Conclusion</div>
+      <p>
+        En tant que membre engagé du MSA, je soumets ce projet avec la conviction profonde qu’il constitue une réponse stratégique aux enjeux d’information, d’identité et de légitimité dans l’espace saharo-sahélien.<br>
+        La désinformation ne se combat pas uniquement par la parole : elle se neutralise par la transparence, la technique et la mémoire.<br>
+        Ce projet est bien plus qu’un site web :<br>
+        🛡️ C’est une arme pacifique de souveraineté numérique.<br>
+        🗣️ C’est une voix officielle, humaine, documentée.<br>
+        📚 C’est une archive pour les générations à venir.
+      </p>
+
+      <div class="contact-bloc">
+        <strong>📎 Contact</strong><br>
+        Hamadine AG MOCTAR<br>
+        Chef de projet numérique & fondateur Tadaksahak Learning<br>
+        📧 <strong>Email :</strong> <a href="mailto:hamadineagmoctar@gmail.com">hamadineagmoctar@gmail.com</a><br>
+        🌍 <strong>MSA :</strong> <a href="https://www.msa-azawad.com" target="_blank">www.msa-azawad.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJECTIF -->
+  <section>
+    <h2>Notre objectif</h2>
+    <ul>
+      <li>✅ Lutter contre les fausses informations</li>
+      <li>✅ Publier des vidéos longues et fichiers audio vérifiés</li>
+      <li>✅ Archiver la mémoire du MSA et de ses actions</li>
+      <li>✅ Protéger l'identité numérique de l'Azawad</li>
+    </ul>
+  </section>
+
+  <!-- IMPORTANCE -->
+  <section>
+    <h2>Pourquoi c’est important ?</h2>
+    <p>Dans un contexte où les fake news menacent la vérité historique et les luttes légitimes, cette plateforme garantit l’accès à une information vérifiée, fiable et durable. Elle devient un instrument stratégique pour la paix, la médiation et la reconnaissance.</p>
+  </section>
+
+  <!-- TÉMOIGNAGE -->
+  <section>
+    <h2>Notre vision</h2>
+    <blockquote>
+      “Ce projet est né d’un besoin concret : Protéger notre voix. Préserver notre vérité. Honorer notre mémoire.”<br />
+      — <strong>Hamadine AG MOCTAR</strong>
+    </blockquote>
+  </section>
+
+  <!-- SOUTIEN -->
+  <section id="soutien">
+    <h2>Vous souhaitez soutenir ?</h2>
+    <p>Contactez-nous, partagez la plateforme, proposez une collaboration ou un partenariat.</p>
+    <div class="contacts" style="margin:1em 0;">
+      <p>
+        <strong>📧 Email :</strong>
+        <a href="mailto:hamadineagmoctar@gmail.com">hamadineagmoctar@gmail.com</a>
+      </p>
+      <p>
+        <strong>📱 WhatsApp :</strong>
+        <a href="https://wa.me/22786762903" target="_blank">+227 86762903</a>
+      </p>
+    </div>
+    <a href="mailto:contact@msa-azawad.com" class="btn support">📩 Contact direct</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 MSA – Mouvement pour le Salut de l'Azawad</p>
+    <p>Développé par Hamadine AG MOCTAR</p>
+    <div class="contacts" style="margin-top:0.5em;">
+      <span>📧 <a href="mailto:hamadineagmoctar@gmail.com">hamadineagmoctar@gmail.com</a></span> |
+      <span>📱 <a href="https://wa.me/22786762903" target="_blank">+227 86762903</a></span>
+    </div>
+  </footer>
+
+  <!-- JS (gestion du bouton projet) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("toggleProjetBtn");
+      const projetDetail = document.getElementById("projet-detail");
+
+      if (toggleBtn && projetDetail) {
+        toggleBtn.addEventListener("click", () => {
+          projetDetail.classList.toggle("hidden");
+          toggleBtn.textContent = projetDetail.classList.contains("hidden")
+            ? "📄 Lire le projet complet"
+            : "🔽 Masquer le projet complet";
+        });
+      }
+    });
+  </script>
+</body>
+  </html>
