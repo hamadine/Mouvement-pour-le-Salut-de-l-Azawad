@@ -1,0 +1,25 @@
+// app.js – Plateforme MSA
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("🔧 MSA app.js chargé avec succès.");
+
+  // === Gestion du bouton "Lire le projet complet" ===
+  const toggleBtn = document.querySelector(".toggle-project");
+  const projetDetail = document.getElementById("projet-detail");
+
+  if (toggleBtn && projetDetail) {
+    toggleBtn.addEventListener("click", () => {
+      projetDetail.classList.toggle("hidden");
+      toggleBtn.textContent = projetDetail.classList.contains("hidden")
+        ? "📄 Lire le projet complet"
+        : "🔽 Masquer le projet complet";
+    });
+  }
+
+  // === Espace réservé pour les futurs modules ===
+  // - Gestion Audio/Vidéo sécurisée
+  // - Authentification Google
+  // - Formulaires de contact ou de soutien
+  // - Indexation d’archives MSA
+  // - Autres fonctionnalités à venir...
+});
