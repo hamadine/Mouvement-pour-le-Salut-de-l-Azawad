@@ -95,7 +95,7 @@ blockquote {
   margin-top: 1.5rem;
   padding: 1rem;
   background-color: #15181b;
-  border-left: 4px solid #5fd3f3;
+  border-left: 4px solid #fa3c3c; /* Accent rouge */
   font-size: 0.97rem;
   line-height: 1.6;
   max-height: 80vh;
@@ -112,13 +112,13 @@ blockquote {
 }
 .projet-dossier h3,
 .projet-dossier .section-title {
-  color: #fff;
+  color: #fa3c3c; /* Rouge vif pour titres */
   margin: 1.5em 0 0.6em 0;
   font-size: 1.3em;
   font-weight: 700;
 }
 .projet-dossier h4 {
-  color: #5fd3f3;
+  color: #5fd3f3; /* Bleu pour sous-titres */
   margin: 1.2em 0 0.5em 0;
 }
 .projet-dossier table {
@@ -136,7 +136,7 @@ blockquote {
 }
 .projet-dossier th {
   background: #23272b;
-  color: #5fd3f3;
+  color: #5fd3f3; /* Bleu pour th */
 }
 .projet-dossier tr:nth-child(even) {
   background: #23272b;
@@ -149,15 +149,15 @@ blockquote {
 .projet-dossier .contact-bloc {
   margin-top: 2em;
   font-size: 1.07em;
-  color: #5fd3f3;
+  color: #5fd3f3; /* Bleu pour contacts */
 }
 .projet-dossier .contact-bloc a {
-  color: #5fd3f3;
+  color: #fa3c3c; /* Rouge pour liens */
   font-weight: bold;
 }
 .projet-dossier hr {
   border: none;
-  border-top: 2px solid #333;
+  border-top: 2px solid #fa3c3c;
   margin: 1.5em 0;
 }
 
@@ -167,8 +167,8 @@ blockquote {
 }
 .toggle-project {
   background-color: transparent;
-  border: 2px solid #5fd3f3;
-  color: #5fd3f3;
+  border: 2px solid #fa3c3c;
+  color: #fa3c3c;
   font-weight: bold;
   padding: 0.5rem 1rem;
   border-radius: 6px;
@@ -177,8 +177,8 @@ blockquote {
   transition: background 0.3s, color 0.3s, transform 0.2s;
 }
 .toggle-project:hover {
-  background-color: #5fd3f3;
-  color: #000;
+  background-color: #fa3c3c;
+  color: #fff;
 }
 
 /* CONTACTS */
